@@ -486,7 +486,7 @@
       }
       /* ------------------------------------------------------- */
       /* -----------------------------------------------------------
-           [PAGE 5] PROJECT 페이지 (마리오) - ★ 수정됨: 이미지 잘림/배경 꽉참 ★
+           [PAGE 5] PROJECT 페이지 (마리오) 
         ----------------------------------------------------------- */
       #project-page {
         width: 100vw;
@@ -563,11 +563,11 @@
         background: transparent;
       }
 
-      /* ★ 수정: 오타 수정 및 이미지 꽉 채우기 */
+    
       .card-front img {
         width: 100%;
-        height: 100%; /* 기존 1 -> 100% 로 수정 */
-        object-fit: contain; /* 비율 유지하며 박스 안에 쏙 */
+        height: 100%; 
+        object-fit: contain; /* 비율 유지하며 박스 안에  */
       }
 
       .card-back {
@@ -583,7 +583,7 @@
         object-fit: cover;
       }
 
-      /* ★ 수정: 하단 배경 이미지가 빈틈없이 꽉 차도록 설정 */
+      /* 하단 배경 이미지가 빈틈없이 꽉 차도록 설정 */
       .bottom-deco {
         position: absolute;
         bottom: 0;
@@ -649,7 +649,7 @@
     font-weight: bold;
     margin: 15px 0;
     transition: all 0.3s ease;
-    /* 4번째 사진처럼 빛나는 효과(Shadow) */
+    /* 빛나는 효과(Shadow) */
     text-shadow: 0 0 10px rgba(108, 241, 217, 0.8), 0 0 20px rgba(160, 253, 236, 0.4);
     position: relative;
 }
@@ -662,7 +662,7 @@
 
 /* 호버 시 나타나는 양옆 화살표 아이콘 */
 .zelda-link::before, .zelda-link::after {
-    content: '▶'; /* 젤다 풍의 화살표 */
+    content: '▶'; /* 화살표 */
     font-size: 1.5rem;
     position: absolute;
     opacity: 0;
@@ -687,7 +687,7 @@
           grid-template-columns: repeat(2, 1fr);
         }
       }
-      /* ★ [핵심수정] 1024px 이상 전체창일 때만 적용되는 규칙 ★ */
+      /* ★ 1024px 이상 전체창일 때만 적용되는 규칙 ★ */
     </style>
   </head>
 
@@ -1107,8 +1107,8 @@ const cVideo = document.getElementById('contact-video');
 const introLayer = document.getElementById('contact-intro-layer');
 const mainContent = document.getElementById('contact-main-content');
 
-// CONTACT 메뉴를 클릭했을 때 비디오가 재생되도록 하는 로직 (선택사항)
-// 만약 페이지 로드되자마자 실행하고 싶다면 아래 cVideo.play()를 바로 쓰세요.
+// CONTACT 메뉴를 클릭했을 때 비디오가 재생되도록 하는 로직 
+
 cVideo.play(); 
 
 // 비디오가 끝나면(onended) 실행될 함수
